@@ -1,7 +1,5 @@
 #!/bin/awk
 
-# correct: 3696336
-
 /\$ cd \.\./ { depth-- }
 /\$ cd [^.]+/ { cwd[depth++] = $3 }
 
